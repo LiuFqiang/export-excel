@@ -57,7 +57,9 @@ public @interface Excel {
     
 2、添加导出工具类ExportExcelUtils
 
-3、调用
+3、替换Application.java生成文件的路径为本地
+
+4、调用
   
   InputStream is = ExportExcelUtil.export(studentDtoList, "sheet1", StudentDto.class);
   其中studentDtoList为List<StudentDto>
